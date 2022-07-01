@@ -2,17 +2,13 @@ const path = require('path');
 require('./utils/alias')(path.join(__dirname, '..'), {
   src: path.join(__dirname, '.'),
 });
-
 const Koa = require('koa');
-// const path = require('path');
 const cors = require('koa2-cors');
 const koaBody = require('koa-body');
 const koaStatic = require('koa-static');
 const mapRoutes = require('./router')
 const errorHandler = require('./utils/error')
 const $consts = require('@src/constants')
-
-
 
 const app = new Koa()
 
@@ -21,9 +17,9 @@ app.use(cors({ origin: '*' }))                               // 跨域处理
 app.use(koaBody({                                            // 数据格式解析与图像上传
   multipart: true,                                           // 支持 multipart-formdate 的表单
   formidable: {
-    uploadDir: path.join(__dirname, '../public/upload'),      // 保存路径
+    uploadDir: path.join(__dirname, '../public'),            // 保存路径
     keepExtensions: true,                                    // 保持原文件后缀
-    maxFieldsSize: 5 * 1024 * 1024                           // 限制文件大小为5M
+    maxFieldsSize: 10 * 1024 * 1024,                          // 限制文件大小为10M
   }
 }))
 app.use(koaStatic(path.join(__dirname, '../public')))       // 静态资源服务器

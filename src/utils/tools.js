@@ -1,24 +1,3 @@
-const data = [
-  { name: 'codery', age: 12 },
-  { name: 'lili', age: 18 },
-  { name: 'codery', age: 32 },
-  { name: 'wuwu', age: 19 },
-  { name: 'lili', age: 23 },
-]
-
-const complexData = [
-  {
-    hobby: [{ name: { age: 1 } }, 'dance', 'play games'],
-    age: 18
-  },
-  {
-    hobby: [{ name: { age: 1 } }, 'dance', 'play games'],
-    age: 20
-  }
-]
-
-
-
 /**
  * 根据属性值过滤对象数组中重复的成员项
  * @param {源对象数组} dataArr 
@@ -38,7 +17,7 @@ const filterRepeatData = (dataArr, key) => {
 /**
  * 
  * @param {excel的sheet名称} sheetName 
- * @returns boolean
+ * @returns true | undefined
  */
 const checkSheetName = (sheetName) => {
   if (new RegExp("[\u4E00-\u9FA5]+").test(sheetName) || new RegExp("^[0-9]").test(sheetName)) {
@@ -46,5 +25,8 @@ const checkSheetName = (sheetName) => {
   }
 }
 
-const fs = require('fs');
-console.log(fs.lstatSync('D:/work/test/sequelize/public/85dd8981eb25551a470aab600.txt').isFile());
+
+module.exports = {
+  filterRepeatData,
+  checkSheetName
+}

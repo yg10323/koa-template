@@ -1,0 +1,382 @@
+[2022-07-01T09:13:17.794] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: Cannot read properties of undefined (reading 'file')
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:8:38)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-body\index.js:148:14
+[2022-07-01T09:26:43.304] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: files.forEach is not a function
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:10:13)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-body\index.js:148:14
+[2022-07-01T09:27:01.368] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: files.forEach is not a function
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:9:13)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-body\index.js:148:14
+[2022-07-01T09:27:09.616] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: files.forEach is not a function
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:9:13)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-body\index.js:148:14
+[2022-07-01T09:27:17.013] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: files.forEach is not a function
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:9:13)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-body\index.js:148:14
+[2022-07-01T09:50:29.120] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: files.forEach is not a function
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:9:13)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-body\index.js:148:14
+[2022-07-01T09:59:36.218] [ERROR] cheese - UploadMiddleware_uploadExcel_ ReferenceError: fs is not defined
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:10:24)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-body\index.js:148:14
+[2022-07-01T10:00:05.002] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: Cannot read properties of undefined (reading 'split')
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:12:32)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-body\index.js:148:14
+[2022-07-01T10:00:55.360] [ERROR] cheese - UploadMiddleware_uploadExcel_ ReferenceError: downPath is not defined
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:14:26)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-body\index.js:148:14
+[2022-07-01T10:08:36.789] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: Cannot read properties of undefined (reading 'split')
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:12:41)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-body\index.js:148:14
+[2022-07-01T10:10:36.806] [ERROR] cheese - 匹配路由错误_ D:\work\test\sequelize\src\middleware\upload.middleware.js:15
+      }
+      ^
+
+SyntaxError: Unexpected token '}'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\router\upload.router.js:4:5)
+[2022-07-01T10:14:59.736] [ERROR] cheese - UploadMiddleware_uploadExcel_ ReferenceError: xlsx is not defined
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:17:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:9)
+    at async cors (D:\work\test\sequelize\node_modules\koa2-cors\dist\index.js:91:9)
+[2022-07-01T10:15:18.126] [ERROR] cheese - UploadMiddleware_uploadExcel_ ReferenceError: xlsx is not defined
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:17:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:9)
+    at async cors (D:\work\test\sequelize\node_modules\koa2-cors\dist\index.js:91:9)
+[2022-07-01T10:15:23.288] [ERROR] cheese - UploadMiddleware_uploadExcel_ ReferenceError: xlsx is not defined
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:17:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:9)
+    at async cors (D:\work\test\sequelize\node_modules\koa2-cors\dist\index.js:91:9)
+[2022-07-01T10:15:37.602] [ERROR] cheese - UploadMiddleware_uploadExcel_ ReferenceError: xlsx is not defined
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:18:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:9)
+    at async cors (D:\work\test\sequelize\node_modules\koa2-cors\dist\index.js:91:9)
+[2022-07-01T10:15:44.365] [ERROR] cheese - UploadMiddleware_uploadExcel_ ReferenceError: xlsx is not defined
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:18:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:9)
+    at async cors (D:\work\test\sequelize\node_modules\koa2-cors\dist\index.js:91:9)
+[2022-07-01T10:15:53.292] [ERROR] cheese - UploadMiddleware_uploadExcel_ ReferenceError: xlsx is not defined
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:19:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:9)
+    at async cors (D:\work\test\sequelize\node_modules\koa2-cors\dist\index.js:91:9)
+[2022-07-01T10:15:58.292] [ERROR] cheese - UploadMiddleware_uploadExcel_ ReferenceError: xlsx is not defined
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:18:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:9)
+    at async cors (D:\work\test\sequelize\node_modules\koa2-cors\dist\index.js:91:9)
+[2022-07-01T10:29:47.481] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: sheetDataList?.length.forEach is not a function
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:15:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-body\index.js:148:14
+[2022-07-01T10:29:49.595] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: sheetDataList?.length.forEach is not a function
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:15:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-body\index.js:148:14
+[2022-07-01T10:30:04.486] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: sheetDataList?.length.forEach is not a function
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:15:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-body\index.js:148:14
+[2022-07-01T10:30:16.329] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: sheetDataList?.length.forEach is not a function
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:16:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-body\index.js:148:14
+[2022-07-01T10:36:49.675] [ERROR] cheese - UploadMiddleware_uploadExcel_ Error: PNG Image File is not a spreadsheet
+    at readSync (D:\work\test\sequelize\node_modules\node-xlsx\node_modules\xlsx\xlsx.js:22001:72)
+    at readFileSync (D:\work\test\sequelize\node_modules\node-xlsx\node_modules\xlsx\xlsx.js:22009:9)
+    at Object.parse (D:\work\test\sequelize\node_modules\node-xlsx\lib\index.js:10:31)
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:16:36)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+[2022-07-01T10:37:41.877] [ERROR] cheese - 匹配路由错误_ D:\work\test\sequelize\src\middleware\upload.middleware.js:9
+class UploadMiddleware {
+^^^^^
+
+SyntaxError: Unexpected token 'class'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\router\upload.router.js:4:5)
+[2022-07-01T11:31:09.448] [ERROR] cheese - 匹配路由错误_ D:\work\test\sequelize\src\middleware\upload.middleware.js:5
+const { }
+      ^^^
+
+SyntaxError: Missing initializer in destructuring declaration
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\router\upload.router.js:4:5)
+[2022-07-01T11:31:30.528] [ERROR] cheese - 匹配路由错误_ D:\work\test\sequelize\src\middleware\upload.middleware.js:5
+const { }
+      ^^^
+
+SyntaxError: Missing initializer in destructuring declaration
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\router\upload.router.js:4:5)
+[2022-07-01T11:33:31.204] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: Cannot read properties of undefined (reading 'emit')
+    at errorEmiter (D:\work\test\sequelize\src\utils\common.js:5:18)
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:16:46)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+[2022-07-01T11:34:09.650] [ERROR] cheese - UploadMiddleware_uploadExcel_ Error: PNG Image File is not a spreadsheet
+    at readSync (D:\work\test\sequelize\node_modules\node-xlsx\node_modules\xlsx\xlsx.js:22001:72)
+    at readFileSync (D:\work\test\sequelize\node_modules\node-xlsx\node_modules\xlsx\xlsx.js:22009:9)
+    at Object.parse (D:\work\test\sequelize\node_modules\node-xlsx\lib\index.js:10:31)
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:18:36)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+[2022-07-01T11:35:11.325] [ERROR] cheese - UploadMiddleware_uploadExcel_ Error: PNG Image File is not a spreadsheet
+    at readSync (D:\work\test\sequelize\node_modules\node-xlsx\node_modules\xlsx\xlsx.js:22001:72)
+    at readFileSync (D:\work\test\sequelize\node_modules\node-xlsx\node_modules\xlsx\xlsx.js:22009:9)
+    at Object.parse (D:\work\test\sequelize\node_modules\node-xlsx\lib\index.js:10:31)
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:18:36)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+[2022-07-01T11:37:34.280] [ERROR] cheese - UploadMiddleware_uploadExcel_ Error: PNG Image File is not a spreadsheet
+    at readSync (D:\work\test\sequelize\node_modules\node-xlsx\node_modules\xlsx\xlsx.js:22001:72)
+    at readFileSync (D:\work\test\sequelize\node_modules\node-xlsx\node_modules\xlsx\xlsx.js:22009:9)
+    at Object.parse (D:\work\test\sequelize\node_modules\node-xlsx\lib\index.js:10:31)
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:18:36)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+[2022-07-01T11:40:10.771] [ERROR] cheese - UploadMiddleware_uploadExcel_ Error: PNG Image File is not a spreadsheet
+    at readSync (D:\work\test\sequelize\node_modules\node-xlsx\node_modules\xlsx\xlsx.js:22001:72)
+    at readFileSync (D:\work\test\sequelize\node_modules\node-xlsx\node_modules\xlsx\xlsx.js:22009:9)
+    at Object.parse (D:\work\test\sequelize\node_modules\node-xlsx\lib\index.js:10:31)
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:22:36)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+[2022-07-01T11:40:22.034] [ERROR] cheese - UploadMiddleware_uploadExcel_ Error: PNG Image File is not a spreadsheet
+    at readSync (D:\work\test\sequelize\node_modules\node-xlsx\node_modules\xlsx\xlsx.js:22001:72)
+    at readFileSync (D:\work\test\sequelize\node_modules\node-xlsx\node_modules\xlsx\xlsx.js:22009:9)
+    at Object.parse (D:\work\test\sequelize\node_modules\node-xlsx\lib\index.js:10:31)
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:22:36)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+[2022-07-01T11:43:59.891] [ERROR] cheese - UploadMiddleware_uploadExcel_ Error: PNG Image File is not a spreadsheet
+    at readSync (D:\work\test\sequelize\node_modules\node-xlsx\node_modules\xlsx\xlsx.js:22001:72)
+    at readFileSync (D:\work\test\sequelize\node_modules\node-xlsx\node_modules\xlsx\xlsx.js:22009:9)
+    at Object.parse (D:\work\test\sequelize\node_modules\node-xlsx\lib\index.js:10:31)
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:23:36)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+[2022-07-01T13:20:49.979] [ERROR] cheese - 匹配路由错误_ D:\work\test\sequelize\src\utils\tools.js:31
+  module.exports = {
+  ^
+
+SyntaxError: Identifier 'module' has already been declared
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\middleware\upload.middleware.js:4:28)
+[2022-07-01T13:30:52.126] [ERROR] cheese - 匹配路由错误_ D:\work\test\sequelize\src\utils\common.js:16
+}
+^
+
+SyntaxError: Unexpected token '}'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\middleware\upload.middleware.js:5:26)
+[2022-07-01T16:46:57.877] [ERROR] cheese - 匹配路由错误_ D:\work\test\sequelize\src\utils\common.js:33
+  errorEmitter.
+              ^
+
+SyntaxError: Unexpected token '.'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\middleware\upload.middleware.js:5:26)
