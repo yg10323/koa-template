@@ -8,6 +8,10 @@ const createTableByExcel = (name, seqConfig) => {
   const tableName = name[0].toUpperCase() + name.slice(1);
 }
 
+
+const ModelName = sequelize.define(tableName, seqConfig);
+module.exports = ModelName
+
 const User = sequelize.define('User', {
   // 在这里定义模型属性
   firstName: {

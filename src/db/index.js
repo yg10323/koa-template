@@ -39,7 +39,7 @@ class DBInstance {
       dialect: 'mysql',
       port: $consts['CONFIG/DB_PORT'],
       timezone: "+08:00",
-      logging: true, // 终端会打印 执行的seq语句
+      // logging: true, // 终端会打印 执行的seq语句
     });
     return this.sequelizeInstance[seqKey];
   }

@@ -72,3 +72,5 @@ const clearFile = (absPath) => {
 }
 
 
+str = '111'
+fs.writeFileSync('./test.txt', str)

@@ -733,3 +733,40 @@ SyntaxError: await is only valid in async functions and the top level bodies of 
     at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
     at require (node:internal/modules/cjs/helpers:102:18)
     at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:5:5)
+[2022-07-03T21:47:12.150] [ERROR] cheese - UploadMiddleware_sheetDataToSeq_ TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object
+    at Object.writeFileSync (node:fs:2163:5)
+    at createTableByExcel (D:\workspace\project\ing\R\koa-template\src\controller\upload.controller.js:9:8)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at sheetDataToSeq (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:72:13)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:27:15)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12 {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[2022-07-03T21:49:07.005] [ERROR] cheese - UploadController_createTableByExcel_ TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object
+    at Object.writeFileSync (node:fs:2163:5)
+    at createTableByExcel (D:\workspace\project\ing\R\koa-template\src\controller\upload.controller.js:10:10)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at sheetDataToSeq (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:72:13)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:27:15)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12 {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[2022-07-03T22:01:39.282] [ERROR] cheese - UploadController_createTableByExcel_ ReferenceError: DataTypes is not defined
+    at createTableByExcel (D:\workspace\project\ing\R\koa-template\src\controller\upload.controller.js:13:17)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at sheetDataToSeq (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:72:13)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:27:15)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:377:31)
