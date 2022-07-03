@@ -20,6 +20,15 @@ const errorHandler = (error, ctx) => {
       MessageType = 400
       break
 
+    case $consts['ERROR/SHEET_DATA_IS_WRONG']:
+      Data = 'excel的行数据填写不符合要求'
+      MessageType = 400
+      break
+    case $consts['ERROR/PRIMARY_KEY_REPEAT']:
+      Data = '主键重复'
+      MessageType = 400
+      break
+
     default:
       Data = 'NOT FOUND'
       MessageType = 404

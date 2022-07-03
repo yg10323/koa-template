@@ -380,3 +380,356 @@ SyntaxError: Unexpected token '.'
     at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
     at require (node:internal/modules/cjs/helpers:102:18)
     at Object.<anonymous> (D:\work\test\sequelize\src\middleware\upload.middleware.js:5:26)
+[2022-07-03T16:25:47.710] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: Cannot read properties of undefined (reading 'dealSheetData')
+    at D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:23:33
+    at Array.forEach (<anonymous>)
+    at uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:19:24)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\workspace\project\ing\R\koa-template\node_modules\koa-static\index.js:53:15)
+[2022-07-03T16:26:01.254] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: Cannot read properties of undefined (reading 'dealSheetData')
+    at D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:23:33
+    at Array.forEach (<anonymous>)
+    at uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:19:24)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\workspace\project\ing\R\koa-template\node_modules\koa-static\index.js:53:15)
+[2022-07-03T16:26:11.345] [ERROR] cheese - UploadMiddleware_uploadExcel_ ReferenceError: dealSheetData is not defined
+    at D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:23:28
+    at Array.forEach (<anonymous>)
+    at uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:19:24)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\workspace\project\ing\R\koa-template\node_modules\koa-static\index.js:53:15)
+[2022-07-03T16:26:34.361] [ERROR] cheese - UploadMiddleware_uploadExcel_ ReferenceError: dealSheetData is not defined
+    at D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:23:28
+    at Array.forEach (<anonymous>)
+    at uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:19:24)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\workspace\project\ing\R\koa-template\node_modules\koa-static\index.js:53:15)
+[2022-07-03T16:26:45.510] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: Cannot read properties of undefined (reading 'dealSheetData')
+    at D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:23:33
+    at Array.forEach (<anonymous>)
+    at uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:19:24)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\workspace\project\ing\R\koa-template\node_modules\koa-static\index.js:53:15)
+[2022-07-03T16:27:08.952] [ERROR] cheese - UploadMiddleware_uploadExcel_ TypeError: Cannot read properties of undefined (reading 'dealSheetData')
+    at D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:23:33
+    at Array.forEach (<anonymous>)
+    at uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:19:24)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\workspace\project\ing\R\koa-template\node_modules\koa-static\index.js:53:15)
+[2022-07-03T16:46:56.305] [ERROR] cheese - UploadMiddleware_uploadExcel_ ReferenceError: ctx is not defined
+    at D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:36:50
+    at Array.forEach (<anonymous>)
+    at Function.dealSheetData (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:34:15)
+    at D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:23:45
+    at Array.forEach (<anonymous>)
+    at uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:19:24)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12
+[2022-07-03T16:47:02.039] [ERROR] cheese - UploadMiddleware_uploadExcel_ ReferenceError: ctx is not defined
+    at D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:37:50
+    at Array.forEach (<anonymous>)
+    at Function.dealSheetData (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:34:15)
+    at D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:23:45
+    at Array.forEach (<anonymous>)
+    at uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:19:24)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12
+[2022-07-03T16:55:20.533] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:42
+        }
+        ^
+
+SyntaxError: Unexpected token '}'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:4:5)
+[2022-07-03T16:55:37.181] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:42
+        }
+        ^
+
+SyntaxError: Unexpected token '}'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:4:5)
+[2022-07-03T16:56:00.307] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:42
+        }
+        ^
+
+SyntaxError: Unexpected token '}'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:4:5)
+[2022-07-03T16:56:06.773] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:42
+        }
+        ^
+
+SyntaxError: Unexpected token '}'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:4:5)
+[2022-07-03T16:56:20.055] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:42
+        }
+        ^
+
+SyntaxError: Unexpected token '}'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:4:5)
+[2022-07-03T20:52:16.454] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:67
+        await next()
+        ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:4:5)
+[2022-07-03T20:52:21.743] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:67
+        await next()
+        ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:4:5)
+[2022-07-03T20:52:39.351] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:67
+        await next()
+        ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:5:5)
+[2022-07-03T20:52:49.667] [ERROR] cheese - UploadMiddleware_sheetDataToSeq_ TypeError: sheetData is not iterable
+    at D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:39:34
+    at Array.forEach (<anonymous>)
+    at sheetDataToSeq (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:37:25)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:26:15)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:377:31)
+[2022-07-03T20:52:59.949] [ERROR] cheese - UploadMiddleware_sheetDataToSeq_ TypeError: sheetData is not iterable
+    at D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:39:34
+    at Array.forEach (<anonymous>)
+    at sheetDataToSeq (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:37:25)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:26:15)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:377:31)
+[2022-07-03T20:55:10.024] [ERROR] cheese - UploadMiddleware_sheetDataToSeq_ TypeError: Cannot read properties of undefined (reading 'forEach')
+    at sheetDataToSeq (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:37:30)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:26:15)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\workspace\project\ing\R\koa-template\node_modules\koa-static\index.js:53:15)
+[2022-07-03T20:56:08.251] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:37
+      /
+      ^
+
+SyntaxError: Invalid regular expression: missing /
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:5:5)
+[2022-07-03T20:58:36.074] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:68
+        await next()
+        ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:5:5)
+[2022-07-03T20:58:55.934] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:68
+        await next()
+        ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:5:5)
+[2022-07-03T20:59:24.051] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:68
+        await next()
+        ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:5:5)
+[2022-07-03T20:59:56.191] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:68
+        await next()
+        ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:5:5)
+[2022-07-03T21:04:15.707] [ERROR] cheese - 匹配路由错误_ Error: Cannot find module 'D:/workspace/project/ing/R/koa-template/src/controller/upload.middleware'
+Require stack:
+- D:\workspace\project\ing\R\koa-template\src\router\upload.router.js
+- D:\workspace\project\ing\R\koa-template\src\router\index.js
+- D:\workspace\project\ing\R\koa-template\src\index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:8:5)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\workspace\\project\\ing\\R\\koa-template\\src\\router\\upload.router.js',
+    'D:\\workspace\\project\\ing\\R\\koa-template\\src\\router\\index.js',
+    'D:\\workspace\\project\\ing\\R\\koa-template\\src\\index.js'
+  ]
+}
+[2022-07-03T21:17:41.287] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:72
+        await next()
+        ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:5:5)

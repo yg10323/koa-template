@@ -47,4 +47,28 @@ const checkSheetName = (sheetName) => {
 }
 
 const fs = require('fs');
-console.log(fs.lstatSync('D:/work/test/sequelize/public/85dd8981eb25551a470aab600.txt').isFile());
+const path = require('path');
+
+/**
+ * 删除文件
+ * @param {文件/文件夹绝对路径} path 
+ * @returns 
+ */
+const clearFile = (absPath) => {
+  if (!path.isAbsolute(absPath)) return;
+  absPath = absPath.split('\\').join('/')
+  const isFile = fs.lstatSync(absPath).isFile()
+  if (isFile) {
+    fs.unlinkSync(absPath)
+    return true
+  } else {
+    const files = fs.readdirSync(absPath)
+    files.forEach(file => {
+      const path = `${absPath}/${file}`
+      clearFile(path)
+    })
+  }
+  return true
+}
+
+

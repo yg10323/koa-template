@@ -15,4 +15,12 @@ module.exports = [
     name: 'SHEET_NAME_IS_WRONG',
     value: 'sheet_name_is_wrong'
   },
+  {
+    name: 'SHEET_DATA_IS_WRONG',
+    value: 'sheet_data_is_wrong'
+  },
+  {
+    name: 'PRIMARY_KEY_REPEAT',
+    value: 'primary_key_epeat'
+  },
 ]

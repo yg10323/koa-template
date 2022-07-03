@@ -19,10 +19,12 @@ const filterRepeatData = (dataArr, key) => {
  * @param {excel的sheet名称} sheetName 
  * @returns true | undefined
  */
-const checkSheetName = (sheetName) => {
-  if (new RegExp("[\u4E00-\u9FA5]+").test(sheetName) || new RegExp("^[0-9]").test(sheetName)) {
-    return true
+const checkSheetName = (str) => {
+  // 判断字符串包含中文或是否以数字开头
+  if (new RegExp("[\u4E00-\u9FA5]+").test(str) || new RegExp("^[0-9]").test(str)) {
+    return false
   }
+  return true
 }
 
 
