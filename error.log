@@ -770,3 +770,416 @@ SyntaxError: await is only valid in async functions and the top level bodies of 
     at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
     at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12
     at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:377:31)
+[2022-07-04T15:47:30.563] [ERROR] cheese - 匹配路由错误_ Error: The dialect localhost is not supported. Supported dialects: mssql, mariadb, mysql, postgres, db2 and sqlite.
+    at new Sequelize (D:\work\test\sequelize\node_modules\sequelize\lib\sequelize.js:188:15)
+    at DBInstance.getSequelizeInstance (D:\work\test\sequelize\src\db\index.js:37:38)
+    at Object.<anonymous> (D:\work\test\sequelize\src\db\index.js:49:30)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+[2022-07-04T16:02:37.287] [ERROR] cheese - 匹配路由错误_ D:\work\test\sequelize\src\controller\upload.controller.js:22
+      作者：琉易
+        
+
+SyntaxError: Invalid or unexpected token
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\router\upload.router.js:8:5)
+[2022-07-04T16:03:02.684] [ERROR] cheese - 匹配路由错误_ D:\work\test\sequelize\src\controller\upload.controller.js:14
+        host: $[],
+                ^
+
+SyntaxError: Unexpected token ']'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\router\upload.router.js:8:5)
+[2022-07-04T16:04:08.789] [ERROR] cheese - 匹配路由错误_ D:\work\test\sequelize\src\controller\upload.controller.js:22
+    }
+    ^
+
+SyntaxError: Missing catch or finally after try
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\router\upload.router.js:8:5)
+[2022-07-04T16:04:17.012] [ERROR] cheese - 匹配路由错误_ D:\work\test\sequelize\src\controller\upload.controller.js:22
+    }
+    ^
+
+SyntaxError: Missing catch or finally after try
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\router\upload.router.js:8:5)
+[2022-07-04T16:04:26.254] [ERROR] cheese - 匹配路由错误_ D:\work\test\sequelize\src\controller\upload.controller.js:23
+    }
+    ^
+
+SyntaxError: Missing catch or finally after try
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\router\upload.router.js:8:5)
+[2022-07-04T16:37:18.085] [ERROR] cheese - 匹配路由错误_ Error: Cannot find module 'D:/work/test/sequelize/src/service'
+Require stack:
+- D:\work\test\sequelize\src\controller\upload.controller.js
+- D:\work\test\sequelize\src\router\upload.router.js
+- D:\work\test\sequelize\src\router\index.js
+- D:\work\test\sequelize\src\index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\controller\upload.controller.js:5:20)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\work\\test\\sequelize\\src\\controller\\upload.controller.js',
+    'D:\\work\\test\\sequelize\\src\\router\\upload.router.js',
+    'D:\\work\\test\\sequelize\\src\\router\\index.js',
+    'D:\\work\\test\\sequelize\\src\\index.js'
+  ]
+}
+[2022-07-04T16:37:22.783] [ERROR] cheese - 匹配路由错误_ D:\work\test\sequelize\src\service\test.js:7
+  const jane = await Models.user.create({ account: "Jane", password: "123456" });
+               ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\controller\upload.controller.js:5:20)
+[2022-07-04T16:37:32.422] [ERROR] cheese - 匹配路由错误_ D:\work\test\sequelize\src\service\test.js:7
+  const jane = await Models.user.create({ account: "Jane", password: "123456" });
+               ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\controller\upload.controller.js:5:20)
+[2022-07-04T16:37:40.799] [ERROR] cheese - 匹配路由错误_ TypeError: module.exports.initModels is not a function
+    at Object.<anonymous> (D:\work\test\sequelize\src\service\test.js:4:31)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\controller\upload.controller.js:5:20)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+[2022-07-04T16:38:08.313] [ERROR] cheese - 匹配路由错误_ TypeError: module.exports.initModels is not a function
+    at Object.<anonymous> (D:\work\test\sequelize\src\service\test.js:4:31)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\controller\upload.controller.js:5:20)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+[2022-07-04T16:38:25.285] [ERROR] cheese - 匹配路由错误_ TypeError: module.exports.initModels is not a function
+    at Object.<anonymous> (D:\work\test\sequelize\src\service\test.js:4:31)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\controller\upload.controller.js:5:20)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+[2022-07-04T16:38:49.410] [ERROR] cheese - 匹配路由错误_ Error: Cannot find module 'D:/work/test/sequelize/src/models/init-models'
+Require stack:
+- D:\work\test\sequelize\src\service\test.js
+- D:\work\test\sequelize\src\controller\upload.controller.js
+- D:\work\test\sequelize\src\router\upload.router.js
+- D:\work\test\sequelize\src\router\index.js
+- D:\work\test\sequelize\src\index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\service\test.js:2:20)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\work\\test\\sequelize\\src\\service\\test.js',
+    'D:\\work\\test\\sequelize\\src\\controller\\upload.controller.js',
+    'D:\\work\\test\\sequelize\\src\\router\\upload.router.js',
+    'D:\\work\\test\\sequelize\\src\\router\\index.js',
+    'D:\\work\\test\\sequelize\\src\\index.js'
+  ]
+}
+[2022-07-04T16:39:08.134] [ERROR] cheese - 匹配路由错误_ Error: Cannot find module './users'
+Require stack:
+- D:\work\test\sequelize\src\model\init-models.js
+- D:\work\test\sequelize\src\service\test.js
+- D:\work\test\sequelize\src\controller\upload.controller.js
+- D:\work\test\sequelize\src\router\upload.router.js
+- D:\work\test\sequelize\src\router\index.js
+- D:\work\test\sequelize\src\index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\model\init-models.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\work\\test\\sequelize\\src\\model\\init-models.js',
+    'D:\\work\\test\\sequelize\\src\\service\\test.js',
+    'D:\\work\\test\\sequelize\\src\\controller\\upload.controller.js',
+    'D:\\work\\test\\sequelize\\src\\router\\upload.router.js',
+    'D:\\work\\test\\sequelize\\src\\router\\index.js',
+    'D:\\work\\test\\sequelize\\src\\index.js'
+  ]
+}
+[2022-07-04T16:39:28.371] [ERROR] cheese - 匹配路由错误_ Error: Cannot find module './users'
+Require stack:
+- D:\work\test\sequelize\src\model\init-models.js
+- D:\work\test\sequelize\src\service\test.js
+- D:\work\test\sequelize\src\controller\upload.controller.js
+- D:\work\test\sequelize\src\router\upload.router.js
+- D:\work\test\sequelize\src\router\index.js
+- D:\work\test\sequelize\src\index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\model\init-models.js:3:14)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\work\\test\\sequelize\\src\\model\\init-models.js',
+    'D:\\work\\test\\sequelize\\src\\service\\test.js',
+    'D:\\work\\test\\sequelize\\src\\controller\\upload.controller.js',
+    'D:\\work\\test\\sequelize\\src\\router\\upload.router.js',
+    'D:\\work\\test\\sequelize\\src\\router\\index.js',
+    'D:\\work\\test\\sequelize\\src\\index.js'
+  ]
+}
+[2022-07-04T16:40:06.632] [ERROR] cheese - UploadController_createTableByExcel_ TypeError: Cannot read properties of undefined (reading 'create')
+    at createUser (D:\work\test\sequelize\src\service\test.js:7:34)
+    at createTableByExcel (D:\work\test\sequelize\src\controller\upload.controller.js:28:26)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async sheetDataToSeq (D:\work\test\sequelize\src\middleware\upload.middleware.js:72:7)
+    at async uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:27:9)
+    at async serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:9)
+    at async cors (D:\work\test\sequelize\node_modules\koa2-cors\dist\index.js:91:9)
+[2022-07-04T16:40:40.282] [ERROR] cheese - UploadController_createTableByExcel_ TypeError: Cannot read properties of undefined (reading 'id')
+    at createTableByExcel (D:\work\test\sequelize\src\controller\upload.controller.js:29:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async sheetDataToSeq (D:\work\test\sequelize\src\middleware\upload.middleware.js:72:7)
+    at async uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:27:9)
+    at async serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:9)
+    at async cors (D:\work\test\sequelize\node_modules\koa2-cors\dist\index.js:91:9)
+[2022-07-04T16:41:06.217] [ERROR] cheese - UploadController_createTableByExcel_ TypeError: Cannot read properties of undefined (reading 'id')
+    at createTableByExcel (D:\work\test\sequelize\src\controller\upload.controller.js:29:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async sheetDataToSeq (D:\work\test\sequelize\src\middleware\upload.middleware.js:72:7)
+    at async uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:27:9)
+    at async serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:9)
+    at async cors (D:\work\test\sequelize\node_modules\koa2-cors\dist\index.js:91:9)
+[2022-07-04T16:41:13.532] [ERROR] cheese - UploadController_createTableByExcel_ TypeError: Cannot read properties of undefined (reading 'id')
+    at createTableByExcel (D:\work\test\sequelize\src\controller\upload.controller.js:29:24)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async sheetDataToSeq (D:\work\test\sequelize\src\middleware\upload.middleware.js:72:7)
+    at async uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:27:9)
+    at async serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:9)
+    at async cors (D:\work\test\sequelize\node_modules\koa2-cors\dist\index.js:91:9)
+[2022-07-04T17:17:01.073] [ERROR] cheese - UploadMiddleware_sheetDataToSeq_ TypeError: primaryArr is not iterable
+    at sheetDataToSeq (D:\work\test\sequelize\src\middleware\upload.middleware.js:76:46)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:27:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+[2022-07-04T17:17:43.077] [ERROR] cheese - UploadMiddleware_sheetDataToSeq_ TypeError: primaryArr is not iterable
+    at sheetDataToSeq (D:\work\test\sequelize\src\middleware\upload.middleware.js:76:46)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:27:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+[2022-07-04T17:25:52.792] [ERROR] cheese - UploadMiddleware_sheetDataToSeq_ TypeError: Assignment to constant variable.
+    at sheetDataToSeq (D:\work\test\sequelize\src\middleware\upload.middleware.js:77:19)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:27:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+[2022-07-04T17:26:36.207] [ERROR] cheese - UploadMiddleware_sheetDataToSeq_ TypeError: Assignment to constant variable.
+    at sheetDataToSeq (D:\work\test\sequelize\src\middleware\upload.middleware.js:77:19)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:27:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+[2022-07-04T17:27:41.676] [ERROR] cheese - UploadMiddleware_sheetDataToSeq_ TypeError: Assignment to constant variable.
+    at sheetDataToSeq (D:\work\test\sequelize\src\middleware\upload.middleware.js:80:21)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:27:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+[2022-07-04T17:33:23.362] [ERROR] cheese - UploadMiddleware_sheetDataToSeq_ TypeError: Assignment to constant variable.
+    at sheetDataToSeq (D:\work\test\sequelize\src\middleware\upload.middleware.js:77:19)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:27:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+[2022-07-04T17:34:10.177] [ERROR] cheese - UploadMiddleware_sheetDataToSeq_ TypeError: Assignment to constant variable.
+    at sheetDataToSeq (D:\work\test\sequelize\src\middleware\upload.middleware.js:80:21)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:27:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+[2022-07-04T17:34:15.184] [ERROR] cheese - UploadMiddleware_sheetDataToSeq_ TypeError: Assignment to constant variable.
+    at sheetDataToSeq (D:\work\test\sequelize\src\middleware\upload.middleware.js:80:21)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at uploadExcel (D:\work\test\sequelize\src\middleware\upload.middleware.js:27:15)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at D:\work\test\sequelize\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\work\test\sequelize\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\work\test\sequelize\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\work\test\sequelize\node_modules\koa-static\index.js:53:15)
+[2022-07-04T17:48:28.066] [ERROR] cheese - 匹配路由错误_ Error: Cannot find module 'D:/work/test/sequelize/src/model/init-models'
+Require stack:
+- D:\work\test\sequelize\src\service\test.js
+- D:\work\test\sequelize\src\controller\upload.controller.js
+- D:\work\test\sequelize\src\router\upload.router.js
+- D:\work\test\sequelize\src\router\index.js
+- D:\work\test\sequelize\src\index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\service\test.js:2:20)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\work\\test\\sequelize\\src\\service\\test.js',
+    'D:\\work\\test\\sequelize\\src\\controller\\upload.controller.js',
+    'D:\\work\\test\\sequelize\\src\\router\\upload.router.js',
+    'D:\\work\\test\\sequelize\\src\\router\\index.js',
+    'D:\\work\\test\\sequelize\\src\\index.js'
+  ]
+}
+[2022-07-04T17:49:32.717] [ERROR] cheese - 匹配路由错误_ D:\work\test\sequelize\src\controller\upload.controller.js:10
+      for (const [tableName, config] = Object.entries(ctx.seqConfig))
+                                                                    ^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1032:15)
+    at Module._compile (node:internal/modules/cjs/loader:1067:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\work\test\sequelize\src\router\upload.router.js:8:5)

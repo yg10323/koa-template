@@ -25,7 +25,7 @@ const errorHandler = (error, ctx) => {
       MessageType = 400
       break
     case $consts['ERROR/PRIMARY_KEY_REPEAT']:
-      Data = '主键重复'
+      Data = '单表主键重复, 主键数量请设置1或0个'
       MessageType = 400
       break
 

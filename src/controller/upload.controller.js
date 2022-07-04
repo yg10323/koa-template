@@ -1,39 +1,36 @@
 const logger = require('@src/utils/log4');
-const fs = require('fs');
+const $consts = require('@src/constants')
 const sequelize = require('@src/db')
-const { Sequelize, DataTypes } = require('sequelize');
+const SequelizeAuto = require('sequelize-auto');
+const createUser = require('@src/service/test')
 
 class UploadController {
   async createTableByExcel (ctx, next) {
     try {
-      // console.log(ctx.tableName);
-      // console.log(ctx.seqConfig);
-
-      // console.log(User === sequelize.models.User);
-      // console.log(User);
-      // console.log(sequelize);
-      try {
-        // const User = sequelize.define(ctx.tableName, {
-        //   firstName: {
-        //     type: DataTypes.STRING,
-        //     allowNull: false
-        //   },
-        //   lastName: {
-        //     type: DataTypes.STRING
-        //     // allowNull 默认为 true
-        //   }
-        // });
-        // let modelName = ctx.tableName[0].toUpperCase() + ctx.tableName.slice(1);
-        console.log(ctx.seqConfig);
-        const User = sequelize.define(ctx.tableName, ctx.seqConfig);
-        User.sync({ force: true }).then(() => {
-          console.log('成功');
-          process.exit() // 成功之后退出，否则会一直在后台运行
-        }) //执行并写入数据库，force是如果数据库中有user表，则删除，重新写入数据。
-
-      } catch (error) {
-        console.error('Unable to connect to the database:', error);
+      for (const [tableName, config] of Object.entries(ctx.seqConfig)) {
+        console.log(tableName);
       }
+      // TODO ctx的数据逻辑变了, controller重写
+      // let modelName = ctx.tableName[0].toUpperCase() + ctx.tableName.slice(1);
+      // modelName = sequelize.define(ctx.tableName, ctx.seqConfig);
+      // //执行并写入数据库，{ force: true }如果存在,则删除
+      // await modelName.sync()
+      // const options = {
+      //   host: $consts['CONFIG/DB_HOST'],
+      //   dialect: $consts['CONFIG/DIALECT'],
+      //   directory: './src/model',  // 指定输出 models 文件的目录
+      //   port: $consts['CONFIG/DB_PORT'],
+      //   // additional: {
+      //   //   timestamps: false
+      //   // }
+      // }
+      // const auto = new SequelizeAuto(sequelize, null, null, options);
+      // auto.run(err => {
+      //   if (err) console.log(err);
+      // })
+
+      // const user = await createUser()
+      // console.log(user.id);
     } catch (error) {
       logger.error('UploadController_createTableByExcel_', error);
     }

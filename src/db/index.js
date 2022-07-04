@@ -36,10 +36,10 @@ class DBInstance {
     }
     this.sequelizeInstance[seqKey] = new Sequelize($consts['CONFIG/DB_DATABASE'], $consts['CONFIG/DB_USER'], $consts['CONFIG/DB_PASSWORD'], {
       host: $consts['CONFIG/DB_HOST'],
-      dialect: 'mysql',
+      dialect: $consts['CONFIG/DIALECT'],
       port: $consts['CONFIG/DB_PORT'],
       timezone: "+08:00",
-      // logging: true, // 终端会打印 执行的seq语句
+      logging: false, // 终端会打印 执行的seq语句
     });
     return this.sequelizeInstance[seqKey];
   }

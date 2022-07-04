@@ -36,12 +36,15 @@ class UploadMiddleware {
   // excel转成seq支持的配置项
   async sheetDataToSeq (ctx, next) {
     try {
-      const primaryArr = []
+      const primaryArr = {}  // { tableName: [boolean, ...], ... }
+      let seqConfig = {}   // { tableName: { seq配置项 }, ... }
       ctx.sheetDataList.forEach(sheetData => {
+        // excel表头
         const tableTitles = sheetData.data[0]
+        // 其余colums
         const tableConfigs = [...sheetData.data].slice(1)
-        const tableArr = []
-        // 获取table的配置数据
+        const tableArr = []  // [ { fileName:xx, ... }, ... ], tableArr是一个sheet的配置
+        // 获取table的配置数据 => 数组转成对象
         tableConfigs.forEach(config => {
           const filedConfig = {}
           config.forEach((config, index) => {
@@ -50,7 +53,7 @@ class UploadMiddleware {
           tableArr.push(filedConfig)
         })
         // 转换成seq的配置格式
-        const seqConfig = {}
+        const configItem = {}, primaryKeys = [];
         tableArr.forEach(config => {
           const filedName = config.filedName
           const length = config.length
@@ -61,14 +64,18 @@ class UploadMiddleware {
           config.allowNull = config.allowNull ? true : false
           config.primaryKey && (config.primaryKey = config.primaryKey ? true : false)
           if (config.primaryKey === 0) config = omit(config, $consts['TABLE/PRIMARY_KEY'])
-          primaryArr.push(config.primaryKey)
-          seqConfig[filedName] = config
+          primaryKeys.push(config.primaryKey)
+          configItem[filedName] = config
         })
-        ctx.tableName = sheetData.name
-        ctx.seqConfig = seqConfig
+        primaryArr[sheetData.name] = primaryKeys
+        seqConfig[sheetData.name] = configItem
       })
-      // 判断是否设置多个主键
-      if (primaryArr.filter(item => item).length >= 2) return errorEmitter(ctx, $consts['ERROR/PRIMARY_KEY_REPEAT'])
+      // 判断是否设置多个主键, 将主键重复的配置剔除
+      for (const [tableName, primaryKeys] of Object.entries(primaryArr)) {
+        const res = primaryKeys.filter(item => item).length >= 2
+        if (res) return errorEmitter(ctx, $consts['ERROR/PRIMARY_KEY_REPEAT'])
+      }
+      ctx.seqConfig = seqConfig
       await next()
     } catch (error) {
       logger.error('UploadMiddleware_sheetDataToSeq_', error)

@@ -1,5 +1,9 @@
 module.exports = [
   {
+    name: 'DIALECT',
+    value: 'mysql',
+  },
+  {
     name: 'DB_HOST',
     value: 'localhost',
   },
