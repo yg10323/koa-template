@@ -1,36 +1,33 @@
 const logger = require('@src/utils/log4');
 const $consts = require('@src/constants')
-const sequelize = require('@src/db')
-const SequelizeAuto = require('sequelize-auto');
-const createUser = require('@src/service/test')
+const { registerTable, generateModel } = require('@src/script')
+const { errorEmitter } = require('@src/utils/common')
+// const createUser = require('@src/service/test')
+
+// const user = await createUser()
+// console.log(user.id);
 
 class UploadController {
+  // 通过excel创建表
   async createTableByExcel (ctx, next) {
     try {
+      let tableNames = []
       for (const [tableName, config] of Object.entries(ctx.seqConfig)) {
-        console.log(tableName);
+        tableNames = await registerTable(tableName, config)
+        if (!tableNames.includes(tableName)) return errorEmitter(ctx, $consts['ERROR/CREATE_TABLE_BY_EXCEL'], tableName)
       }
-      // TODO ctx的数据逻辑变了, controller重写
-      // let modelName = ctx.tableName[0].toUpperCase() + ctx.tableName.slice(1);
-      // modelName = sequelize.define(ctx.tableName, ctx.seqConfig);
-      // //执行并写入数据库，{ force: true }如果存在,则删除
-      // await modelName.sync()
-      // const options = {
-      //   host: $consts['CONFIG/DB_HOST'],
-      //   dialect: $consts['CONFIG/DIALECT'],
-      //   directory: './src/model',  // 指定输出 models 文件的目录
-      //   port: $consts['CONFIG/DB_PORT'],
-      //   // additional: {
-      //   //   timestamps: false
-      //   // }
-      // }
-      // const auto = new SequelizeAuto(sequelize, null, null, options);
-      // auto.run(err => {
-      //   if (err) console.log(err);
-      // })
-
-      // const user = await createUser()
-      // console.log(user.id);
+      const modelNames = generateModel()
+      if (JSON.stringify(modelNames) === JSON.stringify(tableNames)) {
+        ctx.body = {
+          IsSuccessfull: true,
+          Data: {
+            modelNames,
+            message: '创建表成功'
+          },
+          MessageType: 200,
+          totalCount: modelNames.length
+        }
+      } else return errorEmitter(ctx, $consts['ERROR/CREATE_TABLE_BY_EXCEL'])
     } catch (error) {
       logger.error('UploadController_createTableByExcel_', error);
     }

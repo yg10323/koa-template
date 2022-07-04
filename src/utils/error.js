@@ -3,7 +3,7 @@ const $consts = require('../constants')
 // 401请勿重复设置
 
 // 异常处理方法
-const errorHandler = (error, ctx) => {
+const errorHandler = (error, ctx, payload) => {
   let IsSuccessfull = false, Data, MessageType;
   switch (error.message) {
     case $consts['ERROR/FILE_TYPE_ERROR']:
@@ -24,8 +24,14 @@ const errorHandler = (error, ctx) => {
       Data = 'excel的行数据填写不符合要求'
       MessageType = 400
       break
+
     case $consts['ERROR/PRIMARY_KEY_REPEAT']:
       Data = '单表主键重复, 主键数量请设置1或0个'
+      MessageType = 400
+      break
+
+    case $consts['ERROR/CREATE_TABLE_BY_EXCEL']:
+      Data = `${payload}创建出错, 请检查配置格式或查看server端日志文件`
       MessageType = 400
       break
 

@@ -1183,3 +1183,345 @@ SyntaxError: Unexpected token ')'
     at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
     at require (node:internal/modules/cjs/helpers:102:18)
     at Object.<anonymous> (D:\work\test\sequelize\src\router\upload.router.js:8:5)
+[2022-07-04T20:53:41.452] [ERROR] cheese - 匹配路由错误_ Error: Cannot find module 'sequelize-auto'
+Require stack:
+- D:\workspace\project\ing\R\koa-template\src\script\index.js
+- D:\workspace\project\ing\R\koa-template\src\controller\upload.controller.js
+- D:\workspace\project\ing\R\koa-template\src\router\upload.router.js
+- D:\workspace\project\ing\R\koa-template\src\router\index.js
+- D:\workspace\project\ing\R\koa-template\src\index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\script\index.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\workspace\\project\\ing\\R\\koa-template\\src\\script\\index.js',
+    'D:\\workspace\\project\\ing\\R\\koa-template\\src\\controller\\upload.controller.js',
+    'D:\\workspace\\project\\ing\\R\\koa-template\\src\\router\\upload.router.js',
+    'D:\\workspace\\project\\ing\\R\\koa-template\\src\\router\\index.js',
+    'D:\\workspace\\project\\ing\\R\\koa-template\\src\\index.js'
+  ]
+}
+[2022-07-04T21:01:36.978] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\controller\upload.controller.js:15
+      const [res, metadata] = await sequelize.query(`use ${$consts[]}`)
+                                                                   ^
+
+SyntaxError: Unexpected token ']'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:8:5)
+[2022-07-04T21:02:07.815] [ERROR] cheese - UploadController_createTableByExcel_ Error
+    at Query.run (D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\sequelize.js:311:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createTableByExcel (D:\workspace\project\ing\R\koa-template\src\controller\upload.controller.js:15:31)
+    at async sheetDataToSeq (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:79:7)
+    at async uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:27:9)
+    at async serve (D:\workspace\project\ing\R\koa-template\node_modules\koa-static\index.js:53:9)
+    at async cors (D:\workspace\project\ing\R\koa-template\node_modules\koa2-cors\dist\index.js:91:9) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show tables' at line 1
+      at Packet.asError (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Query.execute (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:456:32)
+      at PacketParser.onPacket (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:85:12)
+      at PacketParser.executeStart (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:92:25)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show tables' at line 1",
+    sql: 'use test; show tables;',
+    parameters: undefined
+  },
+  original: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show tables' at line 1
+      at Packet.asError (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Query.execute (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:456:32)
+      at PacketParser.onPacket (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:85:12)
+      at PacketParser.executeStart (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:92:25)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show tables' at line 1",
+    sql: 'use test; show tables;',
+    parameters: undefined
+  },
+  sql: 'use test; show tables;',
+  parameters: {}
+}
+[2022-07-04T21:04:07.874] [ERROR] cheese - UploadController_createTableByExcel_ Error
+    at Query.run (D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\sequelize.js:311:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createTableByExcel (D:\workspace\project\ing\R\koa-template\src\controller\upload.controller.js:15:31)
+    at async sheetDataToSeq (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:79:7)
+    at async uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:27:9)
+    at async serve (D:\workspace\project\ing\R\koa-template\node_modules\koa-static\index.js:53:9)
+    at async cors (D:\workspace\project\ing\R\koa-template\node_modules\koa2-cors\dist\index.js:91:9) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Table 'test.test' doesn't exist
+      at Packet.asError (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Query.execute (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:456:32)
+      at PacketParser.onPacket (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:85:12)
+      at PacketParser.executeStart (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:92:25)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'test.test' doesn't exist",
+    sql: 'SELECT * FROM test;',
+    parameters: undefined
+  },
+  original: Error: Table 'test.test' doesn't exist
+      at Packet.asError (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Query.execute (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:456:32)
+      at PacketParser.onPacket (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:85:12)
+      at PacketParser.executeStart (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:92:25)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_NO_SUCH_TABLE',
+    errno: 1146,
+    sqlState: '42S02',
+    sqlMessage: "Table 'test.test' doesn't exist",
+    sql: 'SELECT * FROM test;',
+    parameters: undefined
+  },
+  sql: 'SELECT * FROM test;',
+  parameters: {}
+}
+[2022-07-04T21:04:59.770] [ERROR] cheese - UploadController_createTableByExcel_ Error
+    at Query.run (D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\sequelize.js:311:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createTableByExcel (D:\workspace\project\ing\R\koa-template\src\controller\upload.controller.js:15:31)
+    at async sheetDataToSeq (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:79:7)
+    at async uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:27:9)
+    at async serve (D:\workspace\project\ing\R\koa-template\node_modules\koa-static\index.js:53:9)
+    at async cors (D:\workspace\project\ing\R\koa-template\node_modules\koa2-cors\dist\index.js:91:9) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+      at Packet.asError (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Query.execute (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:456:32)
+      at PacketParser.onPacket (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:85:12)
+      at PacketParser.executeStart (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:92:25)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1",
+    sql: 'SELECT * FROM ;',
+    parameters: undefined
+  },
+  original: Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+      at Packet.asError (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Query.execute (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:456:32)
+      at PacketParser.onPacket (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:85:12)
+      at PacketParser.executeStart (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:92:25)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_PARSE_ERROR',
+    errno: 1064,
+    sqlState: '42000',
+    sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1",
+    sql: 'SELECT * FROM ;',
+    parameters: undefined
+  },
+  sql: 'SELECT * FROM ;',
+  parameters: {}
+}
+[2022-07-04T21:06:41.331] [ERROR] cheese - UploadController_createTableByExcel_ Error
+    at Query.run (D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\dialects\mysql\query.js:52:25)
+    at D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\sequelize.js:311:28
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createTableByExcel (D:\workspace\project\ing\R\koa-template\src\controller\upload.controller.js:15:31)
+    at async sheetDataToSeq (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:79:7)
+    at async uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\upload.middleware.js:27:9)
+    at async serve (D:\workspace\project\ing\R\koa-template\node_modules\koa-static\index.js:53:9)
+    at async cors (D:\workspace\project\ing\R\koa-template\node_modules\koa2-cors\dist\index.js:91:9) {
+  name: 'SequelizeDatabaseError',
+  parent: Error: Unknown column 'test' in 'where clause'
+      at Packet.asError (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Query.execute (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:456:32)
+      at PacketParser.onPacket (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:85:12)
+      at PacketParser.executeStart (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:92:25)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'test' in 'where clause'",
+    sql: 'select table_name from information_schema.tables where table_schema=test;',
+    parameters: undefined
+  },
+  original: Error: Unknown column 'test' in 'where clause'
+      at Packet.asError (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\packets\packet.js:728:17)
+      at Query.execute (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\commands\command.js:29:26)
+      at Connection.handlePacket (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:456:32)
+      at PacketParser.onPacket (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:85:12)
+      at PacketParser.executeStart (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\packet_parser.js:75:16)
+      at Socket.<anonymous> (D:\workspace\project\ing\R\koa-template\node_modules\mysql2\lib\connection.js:92:25)
+      at Socket.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
+      at readableAddChunk (node:internal/streams/readable:289:9)
+      at Socket.Readable.push (node:internal/streams/readable:228:10) {
+    code: 'ER_BAD_FIELD_ERROR',
+    errno: 1054,
+    sqlState: '42S22',
+    sqlMessage: "Unknown column 'test' in 'where clause'",
+    sql: 'select table_name from information_schema.tables where table_schema=test;',
+    parameters: undefined
+  },
+  sql: 'select table_name from information_schema.tables where table_schema=test;',
+  parameters: {}
+}
+[2022-07-04T21:13:14.047] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\script\index.js:18
+}
+^
+
+SyntaxError: Unexpected token '}'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\upload.controller.js:3:42)
+[2022-07-04T21:18:35.983] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\script\index.js:17
+  return res.map(item => item.)
+                              ^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\upload.controller.js:3:42)
+[2022-07-04T21:32:08.299] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\controller\upload.controller.js:16
+      } catch (error) {
+        ^^^^^
+
+SyntaxError: Unexpected token 'catch'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:8:5)
+[2022-07-04T21:36:38.089] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\script\index.js:2
+const path = require('path') \
+                             ^
+
+SyntaxError: Invalid or unexpected token
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\upload.controller.js:3:42)
+[2022-07-04T21:37:51.194] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\script\index.js:46
+    if (file ===)
+                ^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\upload.controller.js:3:42)
+[2022-07-04T21:40:43.648] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\controller\upload.controller.js:15
+      if ()
+          ^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:8:5)
+[2022-07-04T21:42:53.450] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\controller\upload.controller.js:18
+    } catch (error) {
+    ^
+
+SyntaxError: Unexpected token '}'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\upload.router.js:8:5)

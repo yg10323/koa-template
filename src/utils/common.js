@@ -9,9 +9,9 @@ const $consts = require('@src/constants');
  * @param {错误类型} type 
  * @returns 
  */
-const errorEmitter = (ctx, type) => {
+const errorEmitter = (ctx, type, payload) => {
   const error = new Error(type)
-  return ctx.app.emit('error', error, ctx);
+  return ctx.app.emit('error', error, ctx, payload);
 }
 
 /**

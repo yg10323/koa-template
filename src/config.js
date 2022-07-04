@@ -26,5 +26,9 @@ module.exports = [
   {
     name: 'SERVER_PORT',
     value: 3310
+  },
+  {
+    name: 'DIRECTORY',
+    value: './src/model'
   }
 ]

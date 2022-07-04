@@ -23,4 +23,8 @@ module.exports = [
     name: 'PRIMARY_KEY_REPEAT',
     value: 'primary_key_epeat'
   },
+  {
+    name: 'CREATE_TABLE_BY_EXCEL',
+    value: 'create_table_by_excel'
+  },
 ]
