@@ -72,5 +72,13 @@ const clearFile = (absPath) => {
 }
 
 
-str = '111'
-fs.writeFileSync('./test.txt', str)
+const ejs = require('ejs')
+// const template = require('./src/template/index.ejs')
+const template = fs.readFileSync('./src/template/index.ejs')
+const res = ejs.render(template.toString(), {
+  config: {
+    tableName: 'user',
+    createData: JSON.stringify({ firstName: "Jane", lastName: "Doe" })
+  }
+})
+fs.appendFileSync('./111.js', res)
