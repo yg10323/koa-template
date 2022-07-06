@@ -9,7 +9,14 @@ class BaseController {
   }
 
   static async baseControl (ctx, next) {
-    console.log('baseControl');
+    try {
+      const { modelName, paramsArr } = ctx.request.body
+      const res = await BaseService.updateWhereEqual(modelName, paramsArr)
+      console.log(res);
+      console.log('baseControl');
+    } catch (error) {
+      logger.error('BaseController_baseControl_', error)
+    }
   }
 
   // create => insert

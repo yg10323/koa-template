@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const sequelize = require('@src/db')
+const { sequelize } = require('@src/db')
 const SequelizeAuto = require('sequelize-auto');
 const $consts = require('@src/constants')
 const logger = require('@src/utils/log4');
@@ -54,7 +54,7 @@ const generateModel = () => {
 /**
  * 使用ejs模板生成对应代码文件
  */
-const templateCreate = ()=>{
+const templateCreate = () => {
 
 }
 

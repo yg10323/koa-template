@@ -1691,3 +1691,254 @@ SyntaxError: Missing initializer in const declaration
     at Module.module.__proto__.require (D:\work\test\sequelize\src\utils\alias.js:42:16)
     at require (node:internal/modules/cjs/helpers:102:18)
     at Object.<anonymous> (D:\work\test\sequelize\src\middleware\upload.middleware.js:5:28)
+[2022-07-06T21:49:57.068] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\controller\base.controller.js:5
+const BaseService = require('@src/service/base.service')
+      ^
+
+SyntaxError: Identifier 'BaseService' has already been declared
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\user.controller.js:1:24)
+[2022-07-06T21:50:04.417] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\controller\base.controller.js:5
+const BaseService = require('@src/service/base.service')
+      ^
+
+SyntaxError: Identifier 'BaseService' has already been declared
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\user.controller.js:1:24)
+[2022-07-06T21:50:16.621] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\controller\base.controller.js:5
+const BaseService = require('@src/service/base.service')
+      ^
+
+SyntaxError: Identifier 'BaseService' has already been declared
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\user.controller.js:1:24)
+[2022-07-06T21:50:57.113] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\controller\base.controller.js:5
+const BaseService = require('@src/service/base.service')
+      ^
+
+SyntaxError: Identifier 'BaseService' has already been declared
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\user.controller.js:1:24)
+[2022-07-06T21:51:01.010] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\controller\base.controller.js:5
+const BaseService = require('@src/service/base.service')
+      ^
+
+SyntaxError: Identifier 'BaseService' has already been declared
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\user.controller.js:1:24)
+[2022-07-06T21:51:04.076] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\controller\base.controller.js:5
+const BaseService = require('@src/service/base.service')
+      ^
+
+SyntaxError: Identifier 'BaseService' has already been declared
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\user.controller.js:1:24)
+[2022-07-06T21:51:08.724] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\controller\base.controller.js:5
+const BaseService = require('@src/service/base.service')
+      ^
+
+SyntaxError: Identifier 'BaseService' has already been declared
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\user.controller.js:1:24)
+[2022-07-06T21:52:53.869] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\controller\base.controller.js:13
+      console.log('baseControl');
+      ^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\user.controller.js:1:24)
+[2022-07-06T21:54:12.498] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\controller\base.controller.js:1
+const  = require('@src/utils/log4');
+       ^
+
+SyntaxError: Unexpected token '='
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\user.controller.js:1:24)
+[2022-07-06T21:59:13.627] [ERROR] cheese - BaseController_baseControl_ Error: Invalid value { id: 1 }
+    at Object.escape (D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\sql-string.js:52:11)
+    at MySQLQueryGenerator.escape (D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\dialects\abstract\query-generator.js:709:22)
+    at D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1905:71
+    at Array.map (<anonymous>)
+    at MySQLQueryGenerator._whereParseSingleValueObject (D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1905:52)
+    at MySQLQueryGenerator.whereItemQuery (D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1721:19)
+    at D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1646:25
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1644:35)
+    at MySQLQueryGenerator.getWhereConditions (D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1987:19)
+[2022-07-06T22:00:13.997] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\service\base.service.js:44
+    return await Models[modelName].findAll({ where: { id: [Op.eq]: [...paramsArr] } });
+                                                                 ^
+
+SyntaxError: Unexpected token ':'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\base.controller.js:4:21)
+[2022-07-06T22:02:47.974] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\service\base.service.js:44
+    return await Models[modelName].findAll({ where: { paramsArr[0]: { [Op.eq]: paramsArr } } });
+                                                               ^
+
+SyntaxError: Unexpected token '['
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\base.controller.js:4:21)
+[2022-07-06T22:28:32.516] [ERROR] cheese - BaseController_baseControl_ AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Function._optionsMustContainWhere (D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\model.js:2078:5)
+    at Function.update (D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\model.js:1844:10)
+    at Function.updateAll (D:\workspace\project\ing\R\koa-template\src\service\base.service.js:109:36)
+    at baseControl (D:\workspace\project\ing\R\koa-template\src\controller\base.controller.js:14:37)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: undefined,
+  expected: true,
+  operator: '=='
+}
+[2022-07-06T22:29:33.714] [ERROR] cheese - BaseController_baseControl_ AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+    at Function._optionsMustContainWhere (D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\model.js:2078:5)
+    at Function.update (D:\workspace\project\ing\R\koa-template\node_modules\sequelize\lib\model.js:1844:10)
+    at Function.updateAll (D:\workspace\project\ing\R\koa-template\src\service\base.service.js:109:36)
+    at baseControl (D:\workspace\project\ing\R\koa-template\src\controller\base.controller.js:14:37)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: undefined,
+  expected: true,
+  operator: '=='
+}
+[2022-07-06T22:46:51.912] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\service\base.service.js:114
+    return await Models[modelName].update(param, { where: { []} });
+                                                             ^
+
+SyntaxError: Unexpected token ']'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\base.controller.js:4:21)
+[2022-07-06T22:47:30.533] [ERROR] cheese - 匹配路由错误_ D:\workspace\project\ing\R\koa-template\src\service\base.service.js:114
+    return await Models[modelName].update(param, { where: { [paramsArr][1][0]: } });
+                                                                       ^
+
+SyntaxError: Unexpected token '['
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\controller\base.controller.js:4:21)
+[2022-07-06T22:48:41.760] [ERROR] cheese - BaseController_baseControl_ ReferenceError: param is not defined
+    at Function.updateWhereEqual (D:\workspace\project\ing\R\koa-template\src\service\base.service.js:114:43)
+    at baseControl (D:\workspace\project\ing\R\koa-template\src\controller\base.controller.js:14:37)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:372:16
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:34:12
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-router\lib\router.js:377:31)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\workspace\project\ing\R\koa-template\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\workspace\project\ing\R\koa-template\node_modules\koa-compose\index.js:42:32)

@@ -1,4 +1,4 @@
-const { Sequelize } = require('sequelize');
+const { Sequelize, Op } = require('sequelize');
 const $consts = require('../constants')
 const logger = require('../utils/log4')
 
@@ -46,4 +46,7 @@ class DBInstance {
 }
 
 const seqInstance = DBInstance.getInstance();
-module.exports = seqInstance.getSequelizeInstance()
+module.exports = {
+  Op,
+  sequelize: seqInstance.getSequelizeInstance()
+}
