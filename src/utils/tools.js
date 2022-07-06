@@ -15,7 +15,7 @@ const filterRepeatData = (dataArr, key) => {
 }
 
 /**
- * 
+ * 校验sheet名称是否包含中文或是否以数字开头
  * @param {excel的sheet名称} sheetName 
  * @returns true | undefined
  */
@@ -27,8 +27,17 @@ const checkSheetName = (str) => {
   return true
 }
 
+/**
+ * 字符串首字母大写
+ * @param {} str 
+ * @returns 
+ */
+const firstToUpperCase = (str) => {
+  return str.trim().toLowerCase().replace(/( |^)[a-z]/g, (L) => L.toUpperCase());
+}
 
 module.exports = {
   filterRepeatData,
-  checkSheetName
+  checkSheetName,
+  firstToUpperCase
 }

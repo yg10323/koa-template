@@ -74,11 +74,24 @@ const clearFile = (absPath) => {
 
 const ejs = require('ejs')
 // const template = require('./src/template/index.ejs')
-const template = fs.readFileSync('./src/template/index.ejs')
+const template = ejs.fileLoader('./src/template/controller.ejs')
 const res = ejs.render(template.toString(), {
   config: {
     tableName: 'user',
     createData: JSON.stringify({ firstName: "Jane", lastName: "Doe" })
-  }
+  },
+  // 指定函数文件位置
+  filename: './src/template/functions.ejs'
 })
-fs.appendFileSync('./111.js', res)
+fs.appendFileSync('./user.js', res)
+
+/**
+ * 字符串首字母大写
+ * @param {} str 
+ * @returns 
+ */
+const firstToUpperCase = (str) => {
+  return str.trim().toLowerCase().replace(/( |^)[a-z]/g, (L) => L.toUpperCase());
+}
+
+// console.log(firstToUpperCase(' nihao ya '));

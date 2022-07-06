@@ -51,8 +51,15 @@ const generateModel = () => {
   return modelNames
 }
 
+/**
+ * 使用ejs模板生成对应代码文件
+ */
+const templateCreate = ()=>{
+
+}
 
 module.exports = {
   registerTable,
-  generateModel
+  generateModel,
+  templateCreate
 }

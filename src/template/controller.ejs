@@ -1,0 +1,9 @@
+const BaseController = require('./base.controller')
+<% include('./functions') %>
+class <%= firstToUpperCase(config.tableName) %>Controller extends BaseController {
+    constructor () {
+    super()
+  }
+}
+
+module.exports = <%- firstToUpperCase(config.tableName) %>Controller

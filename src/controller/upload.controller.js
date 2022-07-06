@@ -2,10 +2,6 @@ const logger = require('@src/utils/log4');
 const $consts = require('@src/constants')
 const { registerTable, generateModel } = require('@src/script')
 const { errorEmitter } = require('@src/utils/common')
-// const createUser = require('@src/service/test')
-
-// const user = await createUser()
-// console.log(user.id);
 
 class UploadController {
   // 通过excel创建表
