@@ -31,7 +31,7 @@ const errorHandler = (error, ctx, payload) => {
       break
 
     case $consts['ERROR/CREATE_TABLE_BY_EXCEL']:
-      Data = `${payload}创建出错, 请检查配置格式或查看server端日志文件`
+      Data = `${payload}创建出错, 已存在该表`
       MessageType = 400
       break
 

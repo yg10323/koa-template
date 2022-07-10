@@ -1,0 +1,7 @@
+[2022-07-10T22:23:41.508] [ERROR] cheese - UploadController_createTableByExcel_ TypeError: Assignment to constant variable.
+    at createTableByExcel (D:\workspace\project\ing\R\koa-template\src\controller\base\upload.controller.js:13:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async sheetDataToSeq (D:\workspace\project\ing\R\koa-template\src\middleware\base\upload.middleware.js:79:7)
+    at async uploadExcel (D:\workspace\project\ing\R\koa-template\src\middleware\base\upload.middleware.js:27:9)
+    at async serve (D:\workspace\project\ing\R\koa-template\node_modules\koa-static\index.js:53:9)
+    at async cors (D:\workspace\project\ing\R\koa-template\node_modules\koa2-cors\dist\index.js:91:9)

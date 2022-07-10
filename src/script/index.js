@@ -6,7 +6,6 @@ const SequelizeAuto = require('sequelize-auto');
 const $consts = require('@src/constants')
 const logger = require('@src/utils/log4');
 const { clearFile } = require('@src/utils/common')
-const BaseService = require('@src/service/base/base.service')
 
 /**
  * seq创建表
@@ -14,23 +13,16 @@ const BaseService = require('@src/service/base/base.service')
  * @param {seq的配置项} seqConfig 
  * @param {强制表名} freezeTableName 
  */
-const registerTable = async (tableName, seqConfig, timestamps = true, freezeTableName = true) => {
-  // 设置时间戳
-  // if (seqConfig.createTime) {
-  //   seqConfig.createTime.defaultValue = sequelize.literal('CURRENT_TIMESTAMP')
-  // }
-  // if (seqConfig.updateTime) {
-  //   seqConfig.updateTime.defaultValue = sequelize.literal('CURRENT_TIMESTAMP')
-  //   seqConfig.updateTime.onUpdate = 'CURRENT_TIMESTAMP'
-
-  // }
-  console.log(seqConfig);
-  tableName = sequelize.define(tableName, seqConfig, { timestamps, freezeTableName });
+const registerTable = async (tableName, seqConfig, byConfig = false, options) => {
+  if (byConfig) {
+    // 按照seq配置创建表
+    tableName = sequelize.define(tableName, seqConfig, options);
+  } else {
+    // 按照excel配置创建表
+    tableName = sequelize.define(tableName, seqConfig, { timestamps: true, freezeTableName: true, ...options });
+  }
   //执行并写入数据库，{ force: true }如果存在,则删除
   await tableName.sync()
-  // 查询数据库中所有的表名
-  const tables = await BaseService.getAllTablesName()
-  return tables
 }
 
 /**
