@@ -68,6 +68,9 @@ const transTableType = (type, length) => {
     case $consts['TABLE/TYPE_FLOAT']:
       return length ? DataTypes.FLOAT(length) : DataTypes.FLOAT
 
+    case $consts['TABLE/TYPE_DATE']:
+      return length ? DataTypes.DATE(length) : DataTypes.DATE
+
     default:
       return DataTypes.STRING
   }

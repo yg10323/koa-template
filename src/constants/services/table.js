@@ -34,5 +34,9 @@ module.exports = [
   {
     name: 'TYPE_FLOAT',
     value: 'float'
+  },
+  {
+    name: 'TYPE_DATE',
+    value: 'date'
   }
 ]

@@ -15,6 +15,16 @@ const BaseService = require('@src/service/base/base.service')
  * @param {强制表名} freezeTableName 
  */
 const registerTable = async (tableName, seqConfig, timestamps = true, freezeTableName = true) => {
+  // 设置时间戳
+  // if (seqConfig.createTime) {
+  //   seqConfig.createTime.defaultValue = sequelize.literal('CURRENT_TIMESTAMP')
+  // }
+  // if (seqConfig.updateTime) {
+  //   seqConfig.updateTime.defaultValue = sequelize.literal('CURRENT_TIMESTAMP')
+  //   seqConfig.updateTime.onUpdate = 'CURRENT_TIMESTAMP'
+
+  // }
+  console.log(seqConfig);
   tableName = sequelize.define(tableName, seqConfig, { timestamps, freezeTableName });
   //执行并写入数据库，{ force: true }如果存在,则删除
   await tableName.sync()
@@ -35,7 +45,7 @@ const generateModel = () => {
     port: $consts['CONFIG/DB_PORT'],
     additional: {
       // 将seq生成的时间戳也映射出来
-      timestamps: false
+      timestamps: true
     }
   }
   const auto = new SequelizeAuto(sequelize, null, null, options);
