@@ -60,3 +60,14 @@
     at require (node:internal/modules/cjs/helpers:102:18)
     at D:\workspace\project\ing\R\koa-template\src\router\index.js:11:24
     at Array.forEach (<anonymous>)
+[2022-07-10T22:28:03.862] [ERROR] cheese - 匹配路由错误_ ReferenceError: baseRouter is not defined
+    at Object.<anonymous> (D:\workspace\project\ing\R\koa-template\src\router\base\upload.router.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at Module.module.__proto__.require (D:\workspace\project\ing\R\koa-template\src\utils\alias.js:42:16)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at D:\workspace\project\ing\R\koa-template\src\router\index.js:11:24
+    at Array.forEach (<anonymous>)
