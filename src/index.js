@@ -10,6 +10,9 @@ const mapRoutes = require('./router')
 const errorHandler = require('./utils/error')
 const $consts = require('@src/constants')
 const { clearFile } = require('@src/utils/common')
+// 以下两行引入为测试时使用，记得删除
+const { deleteTemplateCreate } = require('@src/script')
+const BaseService = require('@src/service/base/base.service')
 
 const app = new Koa()
 
@@ -29,7 +32,12 @@ mapRoutes(app)
 // 异常监听
 app.on('error', errorHandler)
 // 服务重启时删除public一级下所有文件，如需清空子目录，请设置第二个参数为 true
-clearFile(path.join(__dirname, '../public'))
+clearFile(path.join(__dirname, '../public'));
+
+// 以下为测试时使用，记得删除
+// (async () => {
+//   deleteTemplateCreate(await BaseService.getAllTablesName())
+// })()
 
 app.listen($consts['CONFIG/SERVER_PORT'], () => {
   console.log(`Koa服务启动成功, 端口: ${$consts['CONFIG/SERVER_PORT']}`);

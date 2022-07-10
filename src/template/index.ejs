@@ -1,6 +1,0 @@
-const { sequelize } = require('@src/db')
-const initModels = require('@src/model/init-models')
-<% if (config) { %>
-const jane = await <%- config.tableName %>.create(<%- config.createData -%>);
-console.log("Jane's auto-generated ID:", jane.id);
-<% } %>

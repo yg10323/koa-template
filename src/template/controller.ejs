@@ -1,9 +1,38 @@
-const BaseController = require('./base.controller')
 <% include('./functions') %>
+const logger = require('@src/utils/log4');
+const BaseController = require('../base/base.controller')
+const <%= firstToUpperCase(config.tableName) %>Service = require('@src/service/custom/<%= config.tableName %>.service')
+
 class <%= firstToUpperCase(config.tableName) %>Controller extends BaseController {
-    constructor () {
+  constructor () {
     super()
+  }
+
+  // 实例方法
+  async insMethod (ctx, next) {
+    try {
+      // your controller logic
+    
+      // use Service methods, such as
+      const { payloads } = ctx.request.body
+      const res = await <%= firstToUpperCase(config.tableName) %>Service.expService(payloads)
+      ctx.body = {
+        IsSuccessfull: true,
+        Data: res,
+        MessageType: 200,
+        totalCount: res.length
+      }
+    } catch (error) {
+      logger.error('<%= firstToUpperCase(config.tableName) %>Controller_insMethod_', error)
+    }
+  }
+
+  // 静态方法
+  static async stcMethod (ctx, next) {
+    // your controller logic
   }
 }
 
+// 导出的为class，使用实例方法时请实例化
+// 使用见生成的对应的.router文件
 module.exports = <%- firstToUpperCase(config.tableName) %>Controller

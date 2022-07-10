@@ -38,8 +38,8 @@ class DBInstance {
       host: $consts['CONFIG/DB_HOST'],
       dialect: $consts['CONFIG/DIALECT'],
       port: $consts['CONFIG/DB_PORT'],
-      timezone: "+08:00",
-      logging: false, // 终端会打印 执行的seq语句
+      timezone: "+08:00", // 东八区时间
+      logging: false, // 若想要终端打印执行的seq语句，请注释掉此行代码
     });
     return this.sequelizeInstance[seqKey];
   }

@@ -1,0 +1,15 @@
+<% include('./functions') %>
+const Router = require('koa-router')
+const {
+  expMiddle
+} = require('@src/middleware/custom/<%= config.tableName %>.middleware')
+const <%- firstToUpperCase(config.tableName) %>Controller = require('@src/controller/custom/<%= config.tableName %>.controller')
+const {
+  insMethod
+} = new <%- firstToUpperCase(config.tableName) %>Controller()
+
+const <%= config.tableName %>Router = new Router({ prefix: '/api/<%= config.tableName %>' })
+
+<%= config.tableName %>Router.get('/test', expMiddle, insMethod)
+
+module.exports = <%= config.tableName %>Router

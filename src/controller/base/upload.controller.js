@@ -1,6 +1,6 @@
 const logger = require('@src/utils/log4');
 const $consts = require('@src/constants')
-const { registerTable, generateModel } = require('@src/script')
+const { registerTable, generateModel, templateCreate } = require('@src/script')
 const { errorEmitter } = require('@src/utils/common')
 
 class UploadController {
@@ -13,7 +13,10 @@ class UploadController {
         if (!tableNames.includes(tableName)) return errorEmitter(ctx, $consts['ERROR/CREATE_TABLE_BY_EXCEL'], tableName)
       }
       const modelNames = generateModel()
-      if (JSON.stringify(modelNames) === JSON.stringify(tableNames)) {
+      // 生成对应的router service middleware controller文件
+      templateCreate(tableNames)
+      // 判断是否生成对应的model
+      if (JSON.stringify(modelNames) === JSON.stringify(tableNames) || modelNames.length ===0) {
         ctx.body = {
           IsSuccessfull: true,
           Data: {
@@ -23,7 +26,7 @@ class UploadController {
           MessageType: 200,
           totalCount: modelNames.length
         }
-      } else return errorEmitter(ctx, $consts['ERROR/CREATE_TABLE_BY_EXCEL'])
+      } else return errorEmitter(ctx, $consts['ERROR/GENERRATE_MODEL'])
     } catch (error) {
       logger.error('UploadController_createTableByExcel_', error);
     }

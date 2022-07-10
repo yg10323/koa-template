@@ -1,0 +1,20 @@
+<% include('./functions') %>
+const logger = require('@src/utils/log4');
+const $consts = require('@src/constants');
+const { errorEmitter } = require('@src/utils/common')
+
+class <%= firstToUpperCase(config.tableName) %>Middleware {
+  // 示例
+  async expMiddle (ctx, next) {
+    try {
+      // your middleware logic, such as
+      await next()
+    } catch (error) {
+      logger.error('<%= firstToUpperCase(config.tableName) %>Middleware_expMiddle_', error)
+    }
+  }
+}
+
+// 导出的为<%= firstToUpperCase(config.tableName) %>Middleware的实例
+// 使用见生成的对应的.router文件
+module.exports = new <%= firstToUpperCase(config.tableName) %>Middleware()

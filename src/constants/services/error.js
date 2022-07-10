@@ -27,4 +27,12 @@ module.exports = [
     name: 'CREATE_TABLE_BY_EXCEL',
     value: 'create_table_by_excel'
   },
+  {
+    name: 'UNAUTHORIZATION',
+    value: 'unauthorization'
+  },
+  {
+    name: 'GENERRATE_MODEL',
+    value: 'generate_model'
+  },
 ]

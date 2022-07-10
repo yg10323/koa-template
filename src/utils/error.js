@@ -35,6 +35,16 @@ const errorHandler = (error, ctx, payload) => {
       MessageType = 400
       break
 
+    case $consts['ERROR/GENERRATE_MODEL']:
+      Data = '生成model时发生异常, 请检查配置格式或查看server端日志文件'
+      MessageType = 400
+      break
+
+    case $consts['ERROR/UNAUTHORIZATION']:
+      Data = 'unauthorization'
+      MessageType = 401
+      break
+
     default:
       Data = 'NOT FOUND'
       MessageType = 404
@@ -47,6 +57,5 @@ const errorHandler = (error, ctx, payload) => {
     MessageType
   }
 }
-
 
 module.exports = errorHandler

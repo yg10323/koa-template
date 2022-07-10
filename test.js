@@ -74,16 +74,35 @@ const clearFile = (absPath) => {
 
 const ejs = require('ejs')
 // const template = require('./src/template/index.ejs')
-const template = ejs.fileLoader('./src/template/controller.ejs')
-const res = ejs.render(template.toString(), {
-  config: {
-    tableName: 'user',
-    createData: JSON.stringify({ firstName: "Jane", lastName: "Doe" })
-  },
-  // 指定函数文件位置
-  filename: './src/template/functions.ejs'
+// const template = ejs.fileLoader('./src/template/controller.ejs')
+// const res = ejs.render(template.toString(), {
+//   config: {
+//     tableName: 'user',
+//     createData: JSON.stringify({ firstName: "Jane", lastName: "Doe" })
+//   },
+//   // 指定函数文件位置
+//   filename: './src/template/functions.ejs'
+// })
+// fs.appendFileSync('./user.js', res)
+const tableNames =['user']
+tableNames.forEach(tableName => {
+  fs.readdirSync(path.join(__dirname, './src/template')).forEach(file => {
+    if (file === 'index.ejs' || file === 'function.ejs' || file === 'index.js') return
+    const template = ejs.fileLoader(path.join(__dirname, `./src/template/${file}`))
+    const pathName = file.split('.')[0]
+    const res = ejs.render(template.toString(), {
+      config: { tableName },
+      filename: './src/template/functions.ejs'
+    })
+    console.log(res);
+    // console.log(path.join(__dirname, '../template/functions.ejs'));
+    // // 判断是不是已经存在对应的文件，存在则直接返回
+    // fs.readdirSync(path.join(__dirname, `../${pathName}`)).forEach(file => {
+    //   if (file.split('.')[0] === `${pathName}`) return
+    //   fs.writeFileSync(path.join(__dirname, `../${pathName}/${tableName}.${pathName}.js`), res)
+    // })
+  })
 })
-fs.appendFileSync('./user.js', res)
 
 /**
  * 字符串首字母大写
