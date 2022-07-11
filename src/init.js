@@ -11,4 +11,6 @@ const path = require('path');
     const files = fs.readdirSync(path.join(__dirname, pathName))
     !files.includes('custom' || 'extra') && fs.mkdirSync(path.join(__dirname, `${pathName}/custom`))
   })
+  const files = fs.readdirSync(path.join(__dirname, '..'))
+  !files.includes('public') && fs.mkdirSync(path.join(__dirname, '../public'))
 })()

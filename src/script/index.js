@@ -61,7 +61,6 @@ const generateModel = () => {
  */
 const templateCreate = (tableNames) => {
   try {
-    console.log(tableNames)
     tableNames.forEach(tableName => {
       fs.readdirSync(path.join(__dirname, '../template')).forEach(file => {
         if ($consts['COMMON/TEMPLATE_FILTER_FILE_NAMES'].includes(file)) return
