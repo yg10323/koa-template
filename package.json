@@ -2,5 +2,37 @@
   "name": "koa-template-typescript",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "nodemon --watch src -e ts,tsx --exec ts-node -r tsconfig-paths/register src/index.ts",
+    "dev": "tsc dist/index.ts"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.0",
+    "@types/koa": "^2.13.5",
+    "@types/koa-router": "^7.4.4",
+    "@types/koa-static": "^4.0.2",
+    "@types/koa2-cors": "^2.0.2",
+    "@types/node": "^18.11.18",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.0",
+    "koa": "^2.14.1",
+    "koa-body": "^6.0.1",
+    "koa-router": "^12.0.0",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "lodash": "^4.17.21",
+    "log4js": "^6.7.1",
+    "lru-cache": "^7.14.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.28.0",
+    "sequelize-auto": "^0.8.8",
+    "uuid": "^9.0.0"
+  }
 }
