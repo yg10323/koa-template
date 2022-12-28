@@ -1,10 +1,13 @@
+import type { AutoOptions } from 'sequelize-auto'
+import fs from 'fs'
 import { Sequelize, Op } from 'sequelize'
 import SequelizeAuto from 'sequelize-auto'
 import { $consts, $log } from 'src/plugins'
+import { without, isEqual } from 'lodash'
 
 // 根据数据表生成对应的 sequelize model
-const generateModel = () => {
-  const options: any = {
+const generateModel = async () => {
+  const options: AutoOptions = {
     host: $consts['CONFIG/DB_HOST'],
     dialect: $consts['CONFIG/DIALECT'],
     directory: $consts['CONFIG/MODEL_DIRECTORY'],
@@ -12,16 +15,19 @@ const generateModel = () => {
     additional: {
       // 关闭时间映射
       timestamps: false
-    }
+    },
+    singularize: true,
+    useDefine: true,
+    noInitModels: true,
+    lang: $consts['CONFIG/MODEL_LANGUAGE']
   }
-  const auto = new SequelizeAuto(dbConfig.sequelize, $consts['CONFIG/DB_USER'], $consts['CONFIG/DB_PASSWORD'], options)
-  auto.run()
-    .then((res: any) => {
-      $log['log'].info('generateModel_create_success')
-    })
-    .catch((err: any) => {
-      $log['log'].error('generateModel_', err)
-    })
+  if (dbConfig.sequelize) {
+    const auto = new SequelizeAuto(dbConfig.sequelize, $consts['CONFIG/DB_USER'], $consts['CONFIG/DB_PASSWORD'], options)
+    const res = await dbConfig.sequelize.query(`SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='${$consts['CONFIG/DB_DATABASE']}';`)
+    const tables = res[0]?.map((item: any) => item.TABLE_NAME) || []
+    const models = without(fs.readdirSync($consts['CONFIG/MODEL_DIRECTORY']), 'index.ts', 'init-models.ts')?.map((item: string) => item.split('.')[0]) || []
+    !isEqual(tables, models) && auto && auto.run()
+  }
 }
 
 class DBInstance {

@@ -1,24 +1,23 @@
 import type { Sequelize } from 'sequelize'
-import { DataTypes } from 'sequelize'
 import fs from 'fs'
 import path from 'path'
 import dnConfig from 'src/db'
+import { without } from 'lodash'
 import { $log } from 'src/plugins'
+import { firstToUpperCase } from 'src/utils/tools'
 
 // 遍历当前目录, 初始化所有 model
 const initModels = (sequelize: Sequelize) => {
   const models: any = {}
   const absPath = path.resolve(__dirname, '.')
-  const modlues = fs.readdirSync(absPath)
+  const modlues = without(fs.readdirSync(absPath), 'index.ts', 'init-models.ts')
   try {
     modlues.forEach((fileName: string) => {
-      if (fileName === 'index.ts') return
       const modelName = fileName.split('.')[0]
-      const modlue = require(`${absPath}/${fileName}`).default
-      const model = modlue(sequelize, DataTypes)
-      models[modelName] = model
+      const modlueClass = require(`${absPath}/${fileName}`)
+      const model = modlueClass[modelName].initModel(sequelize)
+      models[firstToUpperCase(modelName)] = model
     })
-
     return models
   } catch (error: any) {
     $log['error'].error('initModels', error)
