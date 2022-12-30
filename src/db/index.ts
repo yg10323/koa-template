@@ -25,7 +25,8 @@ const generateModel = async () => {
     const auto = new SequelizeAuto(dbConfig.sequelize, $consts['CONFIG/DB_USER'], $consts['CONFIG/DB_PASSWORD'], options)
     const res = await dbConfig.sequelize.query(`SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='${$consts['CONFIG/DB_DATABASE']}';`)
     const tables = res[0]?.map((item: any) => item.TABLE_NAME) || []
-    const models = without(fs.readdirSync($consts['CONFIG/MODEL_DIRECTORY']), 'index.ts', 'init-models.ts')?.map((item: string) => item.split('.')[0]) || []
+    const models = without(fs.readdirSync($consts['CONFIG/MODEL_DIRECTORY']), `index.${$consts['CONFIG/MODEL_LANGUAGE']}`, `init-models.${$consts['CONFIG/MODEL_LANGUAGE']}`)
+      ?.map((item: string) => item.split('.')[0]) || []
     !isEqual(tables, models) && auto && auto.run()
   }
 }
