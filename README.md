@@ -1,7 +1,10 @@
 ## koa服务模板 TS && JS
 ### 1. 启动
+根目录下执行:
 ```js
-根目录下: yarn start
+yarn
+
+yarn start
 ```
 启动成功测试: 浏览器地址栏输入: http://localhost:4012/api/test, 返回如下则成功
 ```js
@@ -100,4 +103,5 @@ if(未携带token) {
 4. 其他目录规范化: 比如中间件统一放置在 middleware 目录下, SQL操作放置在 server 目录下等
 5. 已在 tsconfig.json 中配置 baseUrl 为 src
 6. 服务每次重新启动都会逆向生成一次model
+7. 包管理工具使用yarn
 ```
