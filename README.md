@@ -102,6 +102,5 @@ if(未携带token) {
 3. 静态资源服务使用 koa-static, 统一放置在 static 目录下
 4. 其他目录规范化: 比如中间件统一放置在 middleware 目录下, SQL操作放置在 server 目录下等
 5. 已在 tsconfig.json 中配置 baseUrl 为 src
-6. 服务每次重新启动都会逆向生成一次model
-7. 包管理工具使用yarn
+6. 包管理工具使用yarn
 ```
