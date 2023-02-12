@@ -4,7 +4,7 @@
 提供 [create-koa2](https://www.npmjs.com/package/create-koa2) 拉取项目模板
 ```js
 // 全局安装
-npm install create-koa2
+npm install create-koa2 -g
 
 // 创建ts项目模板
 create-koa2 koa2-project
