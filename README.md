@@ -118,3 +118,6 @@ if(未携带token) {
 5. 已在 tsconfig.json 中配置 baseUrl 为 src
 6. 包管理工具使用yarn
 ```
+
+### 8. JS模板
+整体相同, 但有略微差异
