@@ -1,4 +1,18 @@
 ## koa服务模板 TS && JS
+
+### create-koa2
+提供 [create-koa2](https://www.npmjs.com/package/create-koa2) 拉取项目模板
+```js
+// 全局安装
+npm install create-koa2
+
+// 创建ts项目模板
+create-koa2 koa2-project
+
+// 创建js项目模板
+create-koa2 koa2-project --template javascript
+```
+
 ### 1. 启动
 根目录下执行:
 ```js
