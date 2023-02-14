@@ -1,4 +1,5 @@
 ## koa服务模板 TS && JS
+[如果觉得不错, 请点我前往github点一个星星支持一下~](https://github.com/yg10323/koa-template)
 
 ### create-koa2
 提供 [create-koa2](https://www.npmjs.com/package/create-koa2) 拉取项目模板
